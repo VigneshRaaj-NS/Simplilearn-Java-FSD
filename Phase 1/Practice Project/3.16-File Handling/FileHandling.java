@@ -1,7 +1,5 @@
 import java.util.*;
-import java.io.File.*;
 import java.io.File;
-import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
@@ -66,9 +64,10 @@ public class FileHandling{
             //File creation ends here
 
             //Checking properties of the file
-            /*System.out.println("File name: "+f1.getName());
-            System.out.println("Path o file: "+f1.getPath());
-            System.out.println("Absolute path of file: "+f1.getAbsolutePath());*/
+            File f = new File(fname);
+            System.out.println("\nFile name: "+f.getName());
+            System.out.println("Path of file: "+f.getPath());
+            System.out.println("Absolute path of file: "+f.getAbsolutePath());
 
             while(true){
                 //File operations
@@ -113,7 +112,7 @@ public class FileHandling{
                 else if(Integer.parseInt(opr)==3){
                     sc.nextLine();
                     File f1= new File(fname);
-                    FileWriter fwrite= new FileWriter(f1);
+                    FileWriter fwrite= new FileWriter(f1, true);
                     System.out.println("Enter the content to be appended on the file");
                     String towrite= sc.nextLine();
                     fwrite.append(towrite);
