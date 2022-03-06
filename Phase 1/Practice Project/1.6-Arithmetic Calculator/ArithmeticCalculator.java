@@ -7,7 +7,7 @@ public class ArithmeticCalculator{
 
         while(true){
         System.out.println("Select the operation that you want to perform");
-        System.out.println("1. Additioin  2. Subtraction  3. Multiplication  4. Division  5. Exit (to exit the program)\n");
+        System.out.println("1. Addition  2. Subtraction  3. Multiplication  4. Division  5. Exit (to exit the program)\n");
         //Getting operation selection from user
         int opr= sc.nextInt();
 
