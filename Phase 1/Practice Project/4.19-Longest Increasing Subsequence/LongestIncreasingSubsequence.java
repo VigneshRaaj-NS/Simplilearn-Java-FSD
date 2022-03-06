@@ -48,7 +48,7 @@ public class LongestIncreasingSubsequence {
          
         //Print list
         Iterator<Integer> itr = longestList.iterator();
-        System.out.println("The Longest subsequence");
+        System.out.println("The Longest Increasing Subsequence");
         while(itr.hasNext())
         {
             System.out.print(itr.next() + " ");
